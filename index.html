@@ -15,33 +15,23 @@
 		</div>
 		
 <pre><code>'1':
-    OpenCommand: <span id="opencommand">OpenCommand</span>
-    Size: <span id="size">9</span>
-    CloseAfterClick: false
-    GUITitle: CustomGUI
-    FillWithPanes: false
-    Items:
-open_requirement:
-  requirements:
-    <span id="menu-requirement-name">anythinghere</span>:
-      type: <span id="menu-type">has money</span>
-	  deny_commands: <span id="deny-commands">[]</span>
-      <span id="input-1"></span> '<span id="input-1-info"></span>'
-      <span id="output-1"></span> <span id="output-1-info"></span>
-items: <span class="items"><span id="1">
-  '<span id="item-1-name">1</span>':
-    material: <span id="item-1-material">IRON_SWORD</span>
-    data: <span id="item-1-data">0</span>
-    amount: <span id="item-1-amount">1</span>
-    slot: <span id="item-1-slot">1</span>
-    priority: <span id="item-1-priority">1</span>
-    display_name: '<span id="item-1-display-name">&amp;fIron Sword</span>'
-    lore: <span id="item-1-lore">[]</span>
-    left_click_commands: <span id="item-1-left-click-commands">[]</span>
-    right_click_commands: <span id="item-1-right-click-commands">[]</span>
-    update: <span id="item-1-update">true</span></span></span>
+    OpenCommand: <span id="OpenCommand">menu</span>
+    Size: <span id="Size">9</span>
+    CloseAfterClick: <span id="CloseAfterClick">false</span>
+    GUITitle: <span id="MenuTitle">CustomGUI</span>
+    FillWithPanes: <span id="FillWithPanes">false</span>
+    Items:<span class="items"><span id="1">
+	    '<span id="item-1-name">1</span>':
+            material: <span id="item-1-material">IRON_SWORD</span>
+            data: <span id="item-1-data">0</span>
+            amount: <span id="item-1-amount">1</span>
+            slot: <span id="item-1-slot">1</span>
+            priority: <span id="item-1-priority">1</span>
+            display_name: '<span id="item-1-display-name">&amp;fIron Sword</span>'
+            lore: <span id="item-1-lore">[]</span>
+            left_click_commands: <span id="item-1-left-click-commands">[]</span>
+            right_click_commands: <span id="item-1-right-click-commands">[]</span>
 		</code></pre>
-	
 		<div id="output"></div>
 		
 		<div id="input">
@@ -59,28 +49,28 @@ items: <span class="items"><span id="1">
 			</div>
 			<div class="menu">
 				<div class="input-group">
-					<label>Title</label>
-					<input class="form-control" type="text" id="menu-title_keyup" value="&amp;bAwesome Menu" data-step="3" data-intro="Changes made to the menu and items will automatically apply to your configuration on the left.">
+					<label>Menu Title</label>
+					<input class="form-control" type="text" id="MenuTitle_keyup" value="CustomGUI" data-step="3" data-intro="Changes made to the menu and items will automatically apply to your configuration on the left.">
 				</div>
 				<br>
 				<div class="input-group">
-					<label>Command</label>
-					<input class="form-control" type="text" id="menu-open-command_keyup" value="menu">
+					<label>OpenCommand</label>
+					<input class="form-control" type="text" id="OpenCommand_keyup" value="menu">
 				</div>
 				<br>
 				<div class="input-group">
 					<label>Size (factors of 9)</label>
-					<input class="form-control" type="number" id="menu-size_keyup" value="9" step="9">
+					<input class="form-control" type="number" id="Size_keyup" value="9" step="9" />
 				</div>
 				<br>
 				<div class="input-group">
-					<label>Update Interval</label>
-					<input class="form-control" type="number" id="menu-update-interval_keyup" value="1">
+					<label>Close After Click</label>
+					<input class="form-control" type="text" id="CloseAfterClick_keyup" value="false">
 				</div>
                 <br>
                 <div class="input-group">
-                    <label>Requirement name</label>
-                    <input class="form-control" type="text" id="menu-requirement-name_keyup" value="anythinghere">
+                    <label>FIll With Panes</label>
+                    <input class="form-control" type="text" id="FillWithPanes_keyup" value="false">
                 </div>
                 <br>
                 <div class="input-group">
